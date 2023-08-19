@@ -20,6 +20,7 @@
       "@pageComponents/*": ["./src/components/pageComponents/*"],
       "@queries/*": ["./src/queries/*"],
       "@mutations/*": ["./src/mutations/*"],
+      "@hooks/*": ["./src/hooks/*"],
       "@models": ["./server/models/*"],
       "@schema": ["./server/schema/*"]
     }

@@ -1,18 +1,17 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import HomePage from "@pageComponents/HomePage";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Word Cloud</title>
         <meta name="description" content="Word Cloud" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <HomePage />
       </main>
     </div>
