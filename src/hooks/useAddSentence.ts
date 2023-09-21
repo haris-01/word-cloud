@@ -15,7 +15,7 @@ export const useAddSentence = () => {
       const sentenceCache = cache.readQuery({
         query: GET_SENTENCES,
       }) as SentenceTypeData;
-      const sentences = sentenceCache?.sentences;
+      const sentences = sentenceCache?.sentences || [];
       cache.writeQuery({
         query: GET_SENTENCES,
         data: { sentences: [...sentences, addedSentence] },
