@@ -22,6 +22,10 @@ export const useAddSentence = () => {
       });
     },
     refetchQueries: [{ query: WORD_CLOUD }],
+    // TODO implement toaster
+    onError: (error) =>
+      console.error(`Failed to Add Sentence: ${error.message}`),
+    onCompleted: () => console.info("Sentence Added successfully"),
   });
 
   const add = (sentence: string) => {

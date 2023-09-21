@@ -25,7 +25,7 @@ const Button = ({
       w-full
       ${
         disabled
-          ? "bg-gray-300 text-white"
+          ? "bg-gray-300 bg-gray-300"
           : `text-blue-700 
               font-semibold 
               hover:text-white 

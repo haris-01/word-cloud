@@ -15,6 +15,9 @@ export const useDeleteAllSSentences = () => {
         data: { wordCloud: [] },
       });
     },
+    onError: (error) =>
+      console.error(`Failed to Delete Sentence: ${error.message}`),
+    onCompleted: () => console.info("Sentence Deleted"),
   });
 
   return {
