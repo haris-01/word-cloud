@@ -19,17 +19,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-// export const getServerSideProps = async ({ params }) => {
-//   const { data } = await apolloClient.query({
-//     query: EXAMPLE_QUERY,
-//     variables: { hash: params.hash },
-//   });
-
-//   return {
-//     props: {
-//       hash: params.hash,
-//       data,
-//     },
-//   };
-// };
